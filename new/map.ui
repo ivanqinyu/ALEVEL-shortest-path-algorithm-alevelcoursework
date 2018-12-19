@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Underground path finder</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../.designer/.designer/backup/main/59ca8b2d9bca943901.png</normaloff>../../../.designer/.designer/backup/main/59ca8b2d9bca943901.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(255, 255, 255)</string>
+  </property>
+  <layout class="QGridLayout" name="layout_2">
+   <item row="0" column="1">
+    <layout class="QGridLayout" name="layout" rowstretch="0,10,0,0,0,0,60,40" columnstretch="0,10,90,10">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="Textcity">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>City :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="goal">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="Textfrom">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Start:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="start">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="Textto">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Goal:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="Listcity">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="3">
+      <widget class="QTabWidget" name="tabPath">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Best route</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Fewer transfer</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Less walking</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="0" rowspan="6" colspan="3">
+      <widget class="QGraphicsView" name="map">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/newPrefix/转电脑/实践/beijing.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/newPrefix/转电脑/实践/beijing.jpg);</string>
+       </property>
+       <property name="dragMode">
+        <enum>QGraphicsView::ScrollHandDrag</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QPushButton" name="exit">
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170,0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Log off</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QPushButton" name="Button">
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>Listcity</tabstop>
+  <tabstop>start</tabstop>
+  <tabstop>goal</tabstop>
+  <tabstop>Button</tabstop>
+  <tabstop>tabPath</tabstop>
+  <tabstop>exit</tabstop>
+  <tabstop>map</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../new/example.qrc"/>
+ </resources>
+ <connections/>
+</ui>
